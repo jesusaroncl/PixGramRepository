@@ -11,18 +11,32 @@ body{
 }
 .logo{
     background-color: white;
-    padding: 10px;
-    text-transform: uppercase;
     z-index: 1;
     position: relative;
+    color: #2F001B;
+}
+
+.logo h1{
+    font-size: 50px;
+    margin-top: 8px;
+    padding-bottom: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .textoportada{
     background-color: #FE9393;
-    padding: 30px;
+    padding: 10px;
     margin-top: -230px;
     z-index: 1;
     position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+
+.textoportada h2 {
+    width: 80%;
+    padding-left: 70px;
+    color: white;
 }
 
 nav{
@@ -31,7 +45,7 @@ nav{
     align-items: center;
     color:#2F001B;
     background-color: #f3caba;
-    height: 60px;
+    height: 80px;
     width: auto;
     z-index: 1;
     position: relative;
@@ -43,24 +57,28 @@ nav{
     position: relative;
     display: flex;
     margin: auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 10px;
+    padding-bottom: 30px;
     padding-right: 10px;
+    font-size: 30px;
+    text-align: right;
+    padding-top: 50px;
 }
 .infoF{
     width: 50%;
     padding: 40px;
-    padding-right: 100px;
+    padding-right: 50px;
+    padding-left: 300px;
+    padding-top: 70px;
 }
 .imgF{
-    width: 30%;
-    padding-right: 400px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .imgF img{
-    width: 120%;
-    padding-top: 45px;
-    padding-left: 50px;
+    width: 140%;
+    padding-top: 70px;
+    padding-left: 80px;
+
 }
 .sobrenosotros{
     background-color: white;
@@ -68,39 +86,54 @@ nav{
     position: relative;
     display: flex;
     margin: auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 30px;
+    padding-top: 50px;
 }
 .infoSN{
-    width: 30%;
-    padding: 40px;
-    padding-right: 100px;
+    width: 50%;
+    padding-right: 40px;
+    padding-left: 80px;
 }
 .imgSN{
-    width: 50%;
-    padding-left: 400px;
+margin-left:0px;
+padding-right: 60px;
 }
 
 .imgSN img{
-    width: 70%;
-    padding-top: 45px;
+    width: 100%;
+    padding-top: 90px;
 }
 
+.sobrenosotros h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #004E94;
+}
+.sobrenosotros p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.comofunciona h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #004E94;
+}
+.comofunciona p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 nav ul{
     list-style: none;
     margin: 0;
-    padding: 0;
     display: flex;
-    padding-left: 100px;
-    padding-right: 500px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-left: 375px;
+    padding-right: 70px;
+    padding-top: 25px;
+    padding-bottom: 20px;
 }
 nav li{
     margin: 0 100px;
+    font-size: 25px;
+    padding-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .menu-icon{
@@ -132,10 +165,10 @@ nav li a {
 
 .line{
     background-color: #F86F6F;
-    height: 2px;
+    height: 3px;
     width: auto;
-    margin-left: 62px;
-    margin-right: 464px;
+    margin-left: 376px;
+    margin-right: 71px;
 }
   
 nav li a::after {
@@ -151,5 +184,16 @@ nav li a::after {
   }
   
   nav li a:hover::after {
-    transform: scaleX(4.5);
+    transform: scaleX(2.5);
+  }
+
+  .boton{
+    border-radius: 5px;
+    color: white;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #F86F6F;
+    outline: none;
+    border: none;
   }
