@@ -1,5 +1,5 @@
 Feature:Registrar Usuario
-    Como usuario nuevo quiero poder registrarme en 
+    Como usuario nuevo quiero poder registrarme en
     la aplicacion para poder usar sus funcionalidades.
 
     Scenario: Usruario se registra en la aplicación
