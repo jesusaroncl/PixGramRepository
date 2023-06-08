@@ -164,3 +164,5 @@ Feature: Asistente virtual
         | Chat                       | 
         | Formularios                |
         | Redes sociales             |
+
+Feature: Vista de Redes Sociales y Contacto
