@@ -63,6 +63,7 @@ nav{
     text-align: right;
     padding-top: 50px;
 }
+
 .infoF{
     width: 100%;
     padding: 40px;
@@ -70,16 +71,19 @@ nav{
     padding-left: 300px;
     padding-top: 70px;
 }
+
 .imgF{
     padding-right: 0px;
     padding-left: 0px;
 }
+
 .imgF img{
     width: 140%;
     padding-top: 70px;
     padding-left: 80px;
 
 }
+
 .sobrenosotros{
     background-color: white;
     z-index: 1;
@@ -89,26 +93,32 @@ nav{
     font-size: 30px;
     padding-top: 50px;
 }
+
 .infoSN{
     width: 50%;
     padding-right: 40px;
     padding-left: 80px;
 }
+
 .imgSN{
 margin-left:0px;
 padding-right: 60px;
 }
+
 .imgSN img{
     width: 100%;
     padding-top: 90px;
 }
+
 .sobrenosotros h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #004E94;
 }
+
 .sobrenosotros p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .comofunciona h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #004E94;
@@ -116,6 +126,7 @@ padding-right: 60px;
 .comofunciona p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 nav ul{
     list-style: none;
     margin: 0;
@@ -125,6 +136,7 @@ nav ul{
     padding-top: 25px;
     padding-bottom: 20px;
 }
+
 nav li{
     margin: 0 100px;
     font-size: 25px;
@@ -132,6 +144,7 @@ nav li{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
 }
+
 .menu-icon{
     display: flex;
     flex-direction: column;
@@ -139,22 +152,26 @@ nav li{
     width: 30px;
     height: 21px;
 }
+
 .menu-icon span{
     display: block;
     height: 3px;
     background-color: #441E37;
     padding-left: 40px;
 }
+
 nav li a {
     position: relative;
     text-decoration: none;
     color: #333;
     padding-bottom: 16px;
 }
+
 .bot{
      display: block;
      width: 100%;
 }
+
 .line{
     background-color: #F86F6F;
     height: 3px;
@@ -162,6 +179,7 @@ nav li a {
     margin-left: 376px;
     margin-right: 71px;
 }
+
 nav li a::after {
     content: "";
     position: absolute;
@@ -172,10 +190,12 @@ nav li a::after {
     background-color: #F86F6F;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
-  }  
+  } 
+
   nav li a:hover::after {
     transform: scaleX(2.5);
   }
+
   .boton{
     border-radius: 5px;
     color: white;
@@ -202,6 +222,7 @@ nav li a::after {
     height: 100%;
     margin-left: -90px;
 }
+
 .infoT1{
     padding-left: 100px;
     font-size: 25px;
@@ -210,6 +231,7 @@ nav li a::after {
     width: 100%;
     padding-right: 300px;
   }
+  
 .imgT{
     display: inline-block;
     position: relative;
