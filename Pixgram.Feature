@@ -68,16 +68,16 @@ Feature: Modificar usuario
         su cuenta y información
     When la persona con TEA acceda a su profile al apartado "Perfil"
     And entonces el <usuario> se ubique en la subpagina "Edición del perfil"
-    And el <usuario> rellene los campos "Agregar foto del perfil" 
+    And el <usuario> rellene los campos "Cambiar foto del perfil" 
     Then el sistema hara las actualizaciones del usuario podra observar toda 
         su información respectiva
     And podra modificar su usuario y/o contraseña 
 
     Examples:
-    |           Opcion          |       Pasos a seguir    |
-    |                           | Perfil                  |
-    | Perosnalización de perfil | Edición del perfil      |
-    |                           | Agregar foto del perfil |
+    |           Opcion          |       Pasos a seguir          |
+    |                           |           Perfil              |
+    | Personalización de perfil |     Edición del perfil        |
+    |                           |   Cambiar foto del perfil     |
 
 Feature: Buscar y selecionar pictogramas
 
@@ -87,14 +87,14 @@ Feature: Buscar y selecionar pictogramas
 
    Scenario: La persona con TEA esta en la aplicacion
    Given que la <persona con autismo> esta en la aplicación
-   When la <persona con TEA> quiera Ingresar a "pictogramas o favoritos"
+   When la <persona con TEA> quiera ingresar a "pictogramas o favoritos"
    And de click en el boton de pictogramas
    Then la aplicación le mostrara una ventana con 6 categorias de pictogramas 
 
    Examples:
-       |     Inicio   |
-       | Pictogramas  |
-       | Favoritos    |
+       |     Inicio     |
+       |   Pictogramas  |
+       |    Favoritos   |
     
     Scenario: Usuario busca en la app mas pictogramas
     Given que el <usuario> esta en la aplicación
@@ -112,7 +112,7 @@ Feature: Buscar y selecionar pictogramas
 
 Feature: Personalizar pictograma
     
-        Como familia d ela persona con TEA quiero poder perosnalizar los
+        Como familia de la persona con TEA quiero poder personalizar los
         pictogramas para poder mejorar y adecuarme a sus necesidades de
         mi familiar con autismo
 
