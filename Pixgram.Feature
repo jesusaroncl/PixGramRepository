@@ -68,16 +68,16 @@ Feature: Modificar usuario
         su cuenta y información
     When la persona con TEA acceda a su profile al apartado "Perfil"
     And entonces el <usuario> se ubique en la subpagina "Edición del perfil"
-    And el <usuario> rellene los campos "Agregar foto del perfil" 
+    And el <usuario> rellene los campos "Cambiar foto del perfil" 
     Then el sistema hara las actualizaciones del usuario podra observar toda 
         su información respectiva
     And podra modificar su usuario y/o contraseña 
 
     Examples:
-    |           Opcion          |       Pasos a seguir    |
-    |                           | Perfil                  |
-    | Perosnalización de perfil | Edición del perfil      |
-    |                           | Agregar foto del perfil |
+    |           Opcion          |       Pasos a seguir          |
+    |                           |           Perfil              |
+    | Personalización de perfil |     Edición del perfil        |
+    |                           |   Cambiar foto del perfil     |
 
 Feature: Buscar y selecionar pictogramas
 
@@ -87,14 +87,14 @@ Feature: Buscar y selecionar pictogramas
 
    Scenario: La persona con TEA esta en la aplicacion
    Given que la <persona con autismo> esta en la aplicación
-   When la <persona con TEA> quiera Ingresar a "pictogramas o favoritos"
+   When la <persona con TEA> quiera ingresar a "pictogramas o favoritos"
    And de click en el boton de pictogramas
    Then la aplicación le mostrara una ventana con 6 categorias de pictogramas 
 
    Examples:
-       |     Inicio   |
-       | Pictogramas  |
-       | Favoritos    |
+       |     Inicio     |
+       |   Pictogramas  |
+       |    Favoritos   |
     
     Scenario: Usuario busca en la app mas pictogramas
     Given que el <usuario> esta en la aplicación
@@ -112,7 +112,7 @@ Feature: Buscar y selecionar pictogramas
 
 Feature: Personalizar pictograma
     
-        Como familia d ela persona con TEA quiero poder perosnalizar los
+        Como familia de la persona con TEA quiero poder personalizar los
         pictogramas para poder mejorar y adecuarme a sus necesidades de
         mi familiar con autismo
 
@@ -166,3 +166,84 @@ Feature: Asistente virtual
         | Redes sociales             |
 
 Feature: Vista de Redes Sociales y Contacto
+    
+    Como usuario, quiero poder comunicarme con la empresa y conocer sus redes sociales
+    para poder escribir cualquier duda o reclamo que tenga acerca de la aplicación
+    
+    Scenario: El usuario ingresa mediante la página web
+    Given que el <usuario> este en la landing page
+    When se dirija a la parte inferior de nuestra página
+    Then el usuario podrá encontrar información para poder contactarnos a través de diferentes plataformas.
+    
+    Scenario: El  usuario ingresa mediante la aplicación
+    Given que el <usaurio> este en la zona principal de la aplicación
+    When el usuario abre el menu de opciones
+    And seleccione la opción "Contáctos"
+    Then el sistema mostrará a las diferentes plataforma con las que puede contactar a Pixgram.
+    
+    Examples:
+       | Menu de opciones      |
+       | Contactos             |
+       |    Telefono           |
+       |    Correo Electronico |
+       |    Redes Sociales     |
+ 
+Feature: Desplazamiento Sencillo
+
+    Como usuario, quiero tener la potestad de dirigirme entre la diferentes secciones que ofrece la página web
+    para poder observar solo la información que considero importante
+    
+    Scenario: El usuario ingresa a la página web de aplicación
+    Given que el <usuario> se encuentre en la landing page
+    AND desea desplazarse a un sitio especifico de la página web
+    When el usuario seleccion cualquiera de los botones que se encuentre en el "header de la página
+    Then la página lo desplazará hasta el punto seleccionado
+    
+    Examples:
+      | Ican 2       <Información>   Tutoriales   Testimonios  || |
+      |--------------------------------------------------------|| |
+      | Sobre Nosotros                                         || |
+      | La comunicación es esencial para                       || |
+      | el ser humano, ya que nos permite                      || |
+      | relacionarnos y participar activamente                 || |
+      | en la sociedad...                                      || |
+      |                                                        || |
+      
+Feature: Ver Tutoriales
+
+    Como usuario con TEA, quiero poder ver instrucciones o videos tutoriales de la aplicación
+    para poder conocer las funcionalidades y saber más sobre lo que me ofrecen
+    
+    Scenario: El usuario con TEA ingresa a la página web de la aplicación
+    Given el <usuario con TEA> se encuentre en el landing page
+    When seleccione la opcion "tutoriales"
+    Then el sistema mostrará la sección de instrucciones y video tutoriales sobre cómo usar
+    de manera óptima la aplicación
+    
+    Examples:
+      | Tutoriales                              |
+      | ¿CÓMO FUNCIONA?                         |
+      | # ¿Como registarse correctame a Ican 2? |
+      | # ¿Cómo encuentro los pictogramas?      |
+      | # ¿Dónde encuentro sus redes sociales?  |
+      
+Feature: Msotrar Testimonios
+
+    Como usuario con TEA, quiero poder conocer la historia de las personas con TEA que usaron la aplicación
+    para poder animarme a usarla y compartirla con otros
+    
+    Scenario: El usuario con TEA ingresa a la página web de la aplicación
+    Given el <usuario con TEA> se encuentre en el landing page
+    When el usuario seleccione la opción "testimonios"
+    Then el sistema le enseñará los diferentes testimonios con los que podrá interactuar
+    
+    Examples:
+      | Testimonios                                          |
+      |   ---------------                                    |
+      |  |               |    ICan2 es una excelente opción  |
+      |  |               |    para personas que necesitan    |
+      |  |               |    herramientas de comunicación   |
+      |  |               |    aumentativa accesible ...      |
+      |  |               |                                   |
+      |   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯                                    |
+    
