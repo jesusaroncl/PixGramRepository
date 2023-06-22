@@ -278,7 +278,6 @@ nav ul li:hover:after {
 
 .infoCF {
     padding: 1rem 2rem;
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     flex-direction:column; /*align items: center in media query*/
@@ -307,4 +306,82 @@ nav ul li:hover:after {
     border-radius: 5px;
     color: white;
     background-color: #FE9393;
+}
+
+.testimonios {
+    font-size: 45px;
+    color: #004E94;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+ 
+.slide {
+    width:90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    grid-gap: 1.2rem;
+}
+
+.infoT {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content:center;
+    flex-direction:column; /*align items: center in media query*/
+    align-items: end;
+}
+
+.imgSL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSlide {
+    width:400px;
+    height:350px;
+    border-radius: 50%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.infoT p {
+    margin-left:30px;
+    font-size: 23px;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infoT .infoExtra {
+    margin-top: 19px;
+    font-size: 23px;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.buttons {
+    text-align: center;
+}
+  
+.prev-button, .next-button {
+    margin: 10px;
+}
+  
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+}
+  
+.active-dot {
+    background-color: black;
 }
