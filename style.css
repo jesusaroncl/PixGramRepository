@@ -103,47 +103,47 @@ nav ul li:hover:after {
         left: 50%; 
         transform: translateX(-48%); 
     }
-    .dtxtPortada .txtPortada {
+    .dHPortada .hPortada {
         font-size: 32px;
     }
 
-    .dSobreNosotros .infoSN h2 {
+    .containerSobreNosotros .dInfoSN h2 {
         font-size: 40px;
         margin-top: -15px;
     }
 
-    .dSobreNosotros .infoSN p {
+    .containerSobreNosotros .dInfoSN p {
         font-size: 21px;
         margin-top: 6px;
     }
     
-    .dComoFunciona .infoCF h2 {
+    .containerComoFunciona .dInfoCF h2 {
         font-size: 40px;
     }
     
-    .dComoFunciona .infoCF p {
+    .containerComoFunciona .dInfoCF p {
         font-size: 21px;
         margin-top: 6px;    
     }
 
-    .dComoFunciona .imgCF .imgComoFunciona {
+    .containerComoFunciona .imgCF .imgCF1 {
         width: 80%;
     }
 
-    section .testimonios {
+    section .hTSM {
         font-size: 40px;
         margin-top: 10px;
     }
-    .slide .infoT {
+    .containerTestimonio .dInfoTSM {
         padding: 1rem 0rem;
         margin-left: 6px;
     }
 
-    .slide .infoT p {
+    .containerTestimonio .dInfoTSM p {
         font-size: 21px;
     }
 
-    .slide .imgSL .imgSlide {
+    .containerTestimonio .dImgTSM .imgTSM {
         width: 80%;
         height: 90%;
         margin-top: -1px;
@@ -219,12 +219,12 @@ nav ul li:hover:after {
     }
 }
 
-.logo {
+.containerLogo {
     display: flex;
     
 }
 
-.cmpLogo {
+.dLogo {
     display: flex;
     flex-direction: row;
 }
@@ -234,14 +234,14 @@ nav ul li:hover:after {
     width: 40%;
 }
 
-.logo h1 {
+.containerLogo h1 {
     font-size: 50px;
     margin: 25px 0px;
     color:#2F001B;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.stores {
+.dDownload {
     display: flex;
     margin-left: 102%;
 }
@@ -257,7 +257,7 @@ nav ul li:hover:after {
     width:140px;    
 }
 
-.container1 {
+.containerPortada {
     width: 100%;
     margin: 0 auto;
     display: block;
@@ -269,7 +269,7 @@ nav ul li:hover:after {
     width: 100%;
 }
 
-.dtxtPortada {
+.dHPortada {
     background-color: #FE9393;
     position: relative;
     margin-top: -4px;
@@ -277,7 +277,7 @@ nav ul li:hover:after {
     font-size: 30px;
 }
 
-.txtPortada{
+.hPortada{
     color: white;
     text-align: center;
     position: relative;
@@ -286,7 +286,7 @@ nav ul li:hover:after {
     padding: 5px 50px;
 }
 
-.dSobreNosotros {
+.containerSobreNosotros {
     width:90%;
     margin: 0 auto;
     display: grid;
@@ -294,7 +294,7 @@ nav ul li:hover:after {
     grid-gap: 1.2rem;
 }
 
-.infoSN {
+.dInfoSN {
     padding: 1rem 2rem;
     margin-top: 30px;
     display: flex;
@@ -303,14 +303,14 @@ nav ul li:hover:after {
     
 }
 
-.infoSN h2 {
+.dInfoSN h2 {
     font-size: 45px;
     color: #004E94;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     order: 1;
 }
 
-.infoSN p {
+.dInfoSN p {
     margin: 15px 0px;
     font-size: 23px;
     text-align: justify;
@@ -318,7 +318,7 @@ nav ul li:hover:after {
     order: 2;
 }
 
-.boton1 {
+.btnSN {
     width: 90px;
     height: 30px;
     margin-top: 5px;
@@ -329,22 +329,22 @@ nav ul li:hover:after {
     order: 3;
 }
 
-.imgSN {
+.dImgSN1 {
     display: flex;
     align-items: center;
     justify-content: center; 
 }
 
-.imgSobreNosotros2 {
+.imgSN2 {
     display: none;
 }
 
-.imgSN .imgSobreNosotros {
+.dImgSN1 .imgSN1 {
     width: 100%;
     border-radius: 5px;
 }
 
-.dComoFunciona {
+.containerComoFunciona {
     width:90%;
     margin: 0 auto;
     display: grid;
@@ -352,18 +352,18 @@ nav ul li:hover:after {
     grid-gap: 1.2rem;
 }
 
-.imgCF .imgComoFunciona {
+.imgCF .imgCF1 {
     width: 70%;
     border-radius: 5px;
     margin-top: 10%;
     margin-left: 10%;
 }
 
-.imgComoFunciona2 {
+.imgCF2 {
     display: none;
 }
 
-.infoCF {
+.dInfoCF {
     padding: 1rem 0rem;
     display: flex;
     justify-content: center;
@@ -371,20 +371,20 @@ nav ul li:hover:after {
     align-items: end;
 }
 
-.infoCF h2 {
+.dInfoCF h2 {
     font-size: 45px;
     color: #004E94;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.infoCF p {
+.dInfoCF p {
     margin: 15px 0px;
     font-size: 23px;
     text-align: justify;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.boton2 {
+.btnCF {
     width: 90px;
     justify-content:flex-end;
     height: 30px;
@@ -395,7 +395,7 @@ nav ul li:hover:after {
     background-color: #FE9393;
 }
 
-.testimonios {
+.hTSM {
     font-size: 45px;
     color: #004E94;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -403,7 +403,7 @@ nav ul li:hover:after {
     margin: 30px 0px 0px 0px;
 }
  
-.slide {
+.containerTestimonio {
     width:90%;
     margin: 0 auto;
     display: grid;
@@ -411,7 +411,7 @@ nav ul li:hover:after {
     grid-gap: 1.2rem;
 }
 
-.infoT {
+.dInfoTSM {
     padding: 1rem 2rem;
     display: flex;
     justify-content:center;
@@ -419,13 +419,13 @@ nav ul li:hover:after {
     align-items: end;
 }
 
-.imgSL {
+.dImgTSM {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgSlide {
+.imgTSM {
     width:400px;
     height:350px;
     border-radius: 50%;
@@ -433,14 +433,14 @@ nav ul li:hover:after {
     margin-top: 10%;
 }
 
-.infoT p {
+.dInfoTSM p {
     margin-left:30px;
     font-size: 23px;
     text-align: justify;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.infoT .infoExtra {
+.dInfoTSM .pInfoTSM {
     margin-top: 19px;
     font-size: 23px;
     text-align: justify;
@@ -486,7 +486,7 @@ footer {
     width: 100%;
 }
 
-footer .container1 {
+footer .containerFooter {
     width:100%;
     margin-right: 10px;
     display: grid;
@@ -495,7 +495,7 @@ footer .container1 {
     padding: 45px 80px;
 }
 
-.pixgramDef, .aboutUs, .soporte, .contactanos {
+.dInfoPixgram, .dInfoAboutUs, .dInfoSoporte, .dInfoContactanos {
     width: 100%;
     height: 100%;
     display: flex;
@@ -505,42 +505,44 @@ footer .container1 {
     
 }
 
-.pixgramDef p {
+.dInfoPixgram p {
     text-align: justify;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.aboutUs p, .soporte p, .contactanos p {
+.dInfoAboutUs p, .dInfoSoporte p, .dInfoContactanos p {
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
-.aboutUs h3, .soporte h3, .contactanos h3 {
+.dInfoAboutUs h3, .dInfoSoporte h3, .dInfoContactanos h3 {
     color: white;
     margin-top: -20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.dSoporte {
+.dInfoSoporte {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.dSoporte a, .aboutUs a {
+.dInfoSoporte a, .dInfoAboutUs a {
     text-decoration: none;
+    text-align: center;
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-footer .container2 {
+footer .containerRedes {
     margin: -10px 0px 30px 80px;
 }
 
-footer .container2 a {
+footer .containerRedes a {
     text-decoration: none;
     color: black;
     font-size: 25px;
@@ -561,7 +563,7 @@ footer .container2 a {
 }
 
 
-footer .container3 {
+footer .containerPrivacy {
     text-align: right;
     margin-right: 80px;
     line-height: 3;
@@ -570,7 +572,7 @@ footer .container3 {
 }
 
 @media (max-width:660px) { 
-    .cmpLogo {
+    .dLogo {
         margin-bottom: 10px;
         display: flex;
         position: relative;
@@ -579,24 +581,24 @@ footer .container3 {
         padding-top: 77px;
     }
 
-    .logo {
+    .containerLogo {
         display:inline;
         justify-content: center;
         align-items: center;
     }
-    .logo .imgLogo {
+    .containerLogo .imgLogo {
         width: 13%;
         flex-direction: row;
         float: none;
         margin: none;
     }
-    .logo h1 {
+    .containerLogo h1 {
         font-size: 40px;
         margin-left: -20px;
         margin-top: 30px;
     }
 
-    .stores {
+    .dDownload {
         display: flex;
         position: relative;
         justify-content: center;
@@ -615,7 +617,7 @@ footer .container3 {
         width:140px;    
     }
 
-    .dtxtPortada {
+    .dHPortada {
         background-color: white;
         position: relative;
         margin-top: 25px;
@@ -627,12 +629,12 @@ footer .container3 {
         display: none;
     }
 
-    .txtPortada {
+    .hPortada {
         font-size: 20px;
         color: black;
     }   
 
-    .imgSobreNosotros2 {
+    .imgSN2 {
         width: 100%;
         border-radius: 5px;
         display:flex;
@@ -640,39 +642,39 @@ footer .container3 {
         order:2;
     }
 
-    .imgSN {
+    .dImgSN1 {
         display: none;
     }
 
-    .infoSN {
+    .dInfoSN {
         align-items: center;        
     }
 
-    .infoSN p {
+    .dInfoSN p {
         font-size: 22px;
         order: 3;
     }
 
-    .infoSN h2 {
+    .dInfoSN h2 {
         order:1;
         font-size: 40px;
         margin-top: -35px;
     }
 
 
-    .boton1 {
+    .btnSN {
         order:4;
     }
     
-    .infoCF {
+    .dInfoCF {
         padding: 1rem 2rem;
     }
 
-    .infoCF h2 {
+    .dInfoCF h2 {
         order: 1;
         font-size: 40px;
     }
-    .dComoFunciona .infoCF p {
+    .containerComoFunciona .dInfoCF p {
         font-size: 22px;
         margin-top: 15px;
     }
@@ -681,7 +683,7 @@ footer .container3 {
         display:none;
     }
 
-    .imgComoFunciona2 {
+    .imgCF2 {
         display:flex;
         width: 70%;
         border-radius: 5px;
@@ -689,47 +691,47 @@ footer .container3 {
         margin-top: 15px;
     }
 
-    .dComoFunciona .infoCF p {
+    .containerComoFunciona .dInfoCF p {
         align-items: center;
         order: 3;
         font-size: 22px;
     }
 
-    .infoCF {
+    .dInfoCF {
         align-items: center;
     }
 
-    .boton2 {
+    .btnCF {
         order: 4;
     }
 
-    .imgSL {
+    .dImgTSM {
         align-items: center;
         justify-content: center;
     }
     
-    .testimonios {
+    .hTSM {
         margin-top: 2px;
     }
 
-    .slide .imgSL {
+    .containerTestimonio .dImgTSM {
         margin-top: 55px;
         margin-bottom: 20px;
     }
 
-    .slide .imgSL .imgSlide {
+    .containerTestimonio .dImgTSM .imgTSM {
         width: 45%;
         height: 150%;
         margin-left:0;
     }
 
-    section .slide .infoT {
+    section .containerTestimonio .dInfoTSM {
         padding: 1rem 1.3rem;
         align-items: center;
         justify-content: center;
     }
 
-    section .slide .infoT p, section .slide .infoT .infoExtra {
+    section .containerTestimonio .dInfoTSM p, section .containerTestimonio .dInfoTSM .pInfoTSM {
         margin-left: 0px;
     }
     
@@ -738,18 +740,18 @@ footer .container3 {
         width: 100%;
     }
 
-    footer .container1 {
+    footer .containerFooter {
         width: 100%;
         grid-template-columns: 1fr;
         grid-auto-rows: repeat(4fr,1fr);
         justify-content: center;
         
     }
-    .pixgramDef p {
+    .dInfoPixgram p {
         text-align: center;
     }
 
-    .pixgramDef, .aboutUs, .soporte, .contactanos {
+    .dInfoPixgram, .dInfoAboutUs, .dInfoSoporte, .dInfoContactanos {
         width: 100%;
         height: 100%;
         display: flex;
@@ -760,12 +762,12 @@ footer .container3 {
         padding-bottom: 40px;
     }
 
-    footer .container2 {
+    footer .containerRedes {
         text-align: center;
         margin: -55px 0px 26px 0px;
     }
     
-    footer .container2 a {
+    footer .containerRedes a {
         padding-right: 6%;
     }
 
@@ -774,7 +776,7 @@ footer .container3 {
         
     }
 
-    footer .container3 {
+    footer .containerPrivacy {
         text-align: center;
         margin-right: 0px;
         line-height: 3;

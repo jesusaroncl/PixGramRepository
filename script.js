@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.containerTestimonio');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const dotsContainer = document.querySelector('.dots');
