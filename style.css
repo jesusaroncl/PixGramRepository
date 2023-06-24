@@ -55,6 +55,10 @@ nav ul li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+nav .navLogo {
+    display: none;
+}
+
 nav ul li:hover:after {
     content: "";
     position: absolute; 
@@ -99,9 +103,54 @@ nav ul li:hover:after {
         left: 50%; 
         transform: translateX(-48%); 
     }
+    .dtxtPortada .txtPortada {
+        font-size: 32px;
+    }
+
+    .dSobreNosotros .infoSN h2 {
+        font-size: 40px;
+        margin-top: -15px;
+    }
+
+    .dSobreNosotros .infoSN p {
+        font-size: 21px;
+        margin-top: 6px;
+    }
+    
+    .dComoFunciona .infoCF h2 {
+        font-size: 40px;
+    }
+    
+    .dComoFunciona .infoCF p {
+        font-size: 21px;
+        margin-top: 6px;    
+    }
+
+    .dComoFunciona .imgCF .imgComoFunciona {
+        width: 80%;
+    }
+
+    section .testimonios {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .slide .infoT {
+        padding: 1rem 0rem;
+        margin-left: 6px;
+    }
+
+    .slide .infoT p {
+        font-size: 21px;
+    }
+
+    .slide .imgSL .imgSlide {
+        width: 80%;
+        height: 90%;
+        margin-top: -1px;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     .checkbtn {
         display: block;
     }
@@ -110,7 +159,10 @@ nav ul li:hover:after {
         content: none;
         display: none;
     }
-    
+    nav {
+        z-index: 9999;
+        position: fixed;
+    }
     nav ul {
         position: fixed;
         width: 100%;
@@ -120,6 +172,7 @@ nav ul li:hover:after {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 9999;
     }
     
     nav ul li {
@@ -150,6 +203,7 @@ nav ul li:hover:after {
         content: "";
         position: absolute;
         bottom: 10px;
+        transform: translateY(15px);
         left: 0;
         display: inline-flex;
         background-color: #ff3c78;
@@ -160,19 +214,24 @@ nav ul li:hover:after {
         width: 100%;
     }
 
-    #check:checked ~ ul{
+    #check:checked ~ ul, nav::after {
         left: 0;
     }
 }
 
 .logo {
-    overflow: auto;
+    display: flex;
+    
 }
 
+.cmpLogo {
+    display: flex;
+    flex-direction: row;
+}
 .imgLogo {
     float: left;
     margin: 15px 30px;
-    width: 10%;
+    width: 40%;
 }
 
 .logo h1 {
@@ -180,6 +239,22 @@ nav ul li:hover:after {
     margin: 25px 0px;
     color:#2F001B;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.stores {
+    display: flex;
+    margin-left: 102%;
+}
+
+
+.imgAppStore {
+    width:130px;
+    margin-right: 20%;
+    margin-left: 20px;
+}
+
+.imgPlayStore {
+    width:140px;    
 }
 
 .container1 {
@@ -211,7 +286,6 @@ nav ul li:hover:after {
     padding: 5px 50px;
 }
 
-
 .dSobreNosotros {
     width:90%;
     margin: 0 auto;
@@ -226,12 +300,14 @@ nav ul li:hover:after {
     display: flex;
     justify-content: center;
     flex-direction:column; /*align items: center in media query*/
+    
 }
 
 .infoSN h2 {
     font-size: 45px;
     color: #004E94;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    order: 1;
 }
 
 .infoSN p {
@@ -239,6 +315,7 @@ nav ul li:hover:after {
     font-size: 23px;
     text-align: justify;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    order: 2;
 }
 
 .boton1 {
@@ -249,12 +326,17 @@ nav ul li:hover:after {
     border-radius: 5px;
     color: white;
     background-color: #FE9393;
+    order: 3;
 }
 
 .imgSN {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+}
+
+.imgSobreNosotros2 {
+    display: none;
 }
 
 .imgSN .imgSobreNosotros {
@@ -277,8 +359,12 @@ nav ul li:hover:after {
     margin-left: 10%;
 }
 
+.imgComoFunciona2 {
+    display: none;
+}
+
 .infoCF {
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     display: flex;
     justify-content: center;
     flex-direction:column; /*align items: center in media query*/
@@ -464,6 +550,17 @@ footer .container2 a {
     text-align: center;
 }
 
+.containerLine {
+    width: 100%; 
+    content: "";
+    display: flex;
+    position: absolute;
+    background-color: white;
+    margin-top: -10px;
+    height: 3px;
+}
+
+
 footer .container3 {
     text-align: right;
     margin-right: 80px;
@@ -472,17 +569,184 @@ footer .container3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (max-width:1000px) {
+@media (max-width:660px) { 
+    .cmpLogo {
+        margin-bottom: 10px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-left: -20px;
+        padding-top: 77px;
+    }
+
+    .logo {
+        display:inline;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo .imgLogo {
+        width: 13%;
+        flex-direction: row;
+        float: none;
+        margin: none;
+    }
+    .logo h1 {
+        font-size: 40px;
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+
+    .stores {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 19%;
+        margin-bottom: 10px;
+    }
+    
+    .imgAppStore {
+        width:130px;
+        margin-right: 20%;
+        margin-left: 20px;
+    }
+    
+    .imgPlayStore {
+        width:140px;    
+    }
+
+    .dtxtPortada {
+        background-color: white;
+        position: relative;
+        margin-top: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+    }
+
+    .imgPortada {
+        display: none;
+    }
+
+    .txtPortada {
+        font-size: 20px;
+        color: black;
+    }   
+
+    .imgSobreNosotros2 {
+        width: 100%;
+        border-radius: 5px;
+        display:flex;
+        margin-top: 10px;
+        order:2;
+    }
+
+    .imgSN {
+        display: none;
+    }
+
+    .infoSN {
+        align-items: center;        
+    }
+
+    .infoSN p {
+        font-size: 22px;
+        order: 3;
+    }
+
+    .infoSN h2 {
+        order:1;
+        font-size: 40px;
+        margin-top: -35px;
+    }
+
+
+    .boton1 {
+        order:4;
+    }
+    
+    .infoCF {
+        padding: 1rem 2rem;
+    }
+
+    .infoCF h2 {
+        order: 1;
+        font-size: 40px;
+    }
+    .dComoFunciona .infoCF p {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .imgCF {
+        display:none;
+    }
+
+    .imgComoFunciona2 {
+        display:flex;
+        width: 70%;
+        border-radius: 5px;
+        order: 2;
+        margin-top: 15px;
+    }
+
+    .dComoFunciona .infoCF p {
+        align-items: center;
+        order: 3;
+        font-size: 22px;
+    }
+
+    .infoCF {
+        align-items: center;
+    }
+
+    .boton2 {
+        order: 4;
+    }
+
+    .imgSL {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .testimonios {
+        margin-top: 2px;
+    }
+
+    .slide .imgSL {
+        margin-top: 55px;
+        margin-bottom: 20px;
+    }
+
+    .slide .imgSL .imgSlide {
+        width: 45%;
+        height: 150%;
+        margin-left:0;
+    }
+
+    section .slide .infoT {
+        padding: 1rem 1.3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section .slide .infoT p, section .slide .infoT .infoExtra {
+        margin-left: 0px;
+    }
+    
     footer {
         background-color: #f3caba;
         width: 100%;
     }
+
     footer .container1 {
         width: 100%;
         grid-template-columns: 1fr;
         grid-auto-rows: repeat(4fr,1fr);
         justify-content: center;
         
+    }
+    .pixgramDef p {
+        text-align: center;
     }
 
     .pixgramDef, .aboutUs, .soporte, .contactanos {
@@ -498,11 +762,16 @@ footer .container3 {
 
     footer .container2 {
         text-align: center;
-        margin: -50px 0px 20px 0px;
+        margin: -55px 0px 26px 0px;
     }
     
     footer .container2 a {
         padding-right: 6%;
+    }
+
+    .containerLine {
+        margin-top: -1px;
+        
     }
 
     footer .container3 {
@@ -510,5 +779,4 @@ footer .container3 {
         margin-right: 0px;
         line-height: 3;
     }
-
 }
