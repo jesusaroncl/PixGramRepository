@@ -782,6 +782,10 @@ footer .containerPrivacy {
     section .containerTestimonio .dInfoTSM p, section .containerTestimonio .dInfoTSM .pInfoTSM {
         margin-left: 0px;
     }
+
+    .trustedBrands {
+        font-size: 40px;
+    }
     
     /* containerTrustedBrands */
     .containerTrustedBrands {
