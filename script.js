@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.containerTestimonio');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
@@ -45,3 +46,33 @@ slides.forEach((slide, index) => {
 });
 
 showSlide(currentSlide);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtener los elementos del navbar
+  const sobreNosotrosLink = document.querySelector('.SobreNosotros');
+  const tutorialesLink = document.querySelector('.Tutoriales');
+  const testimoniosLink = document.querySelector('.Testimonios');
+  const sobreNosotrosSection = document.querySelector('.containerSobreNosotros');
+  const tutorialesSection = document.querySelector('.containerComoFunciona');
+  const testimoniosSection = document.querySelector('.hTSM');
+
+  // Agregar evento de clic al enlace de Servicios
+  sobreNosotrosLink.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    sobreNosotrosSection.scrollIntoView({ behavior: 'smooth' }); // Desplazarse a la sección de Servicios
+  });
+
+  // Agregar evento de clic al enlace de Portafolio
+  tutorialesLink.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    tutorialesSection.scrollIntoView({ behavior: 'smooth' }); // Desplazarse a la sección de Portafolio
+  });
+
+  testimoniosLink.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+      testimoniosSection.scrollIntoView({ behavior: 'smooth' }); // Desplazarse a la sección de Portafolio
+    });
+});
+
+
